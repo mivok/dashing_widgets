@@ -1,0 +1,75 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #dc5945;
+$value-color:       #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$label-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+$tick-color:        rgba(0, 0, 0, 0.4);
+
+
+// ----------------------------------------------------------------------------
+// Widget-ping styles
+// ----------------------------------------------------------------------------
+.widget-ping {
+
+  background-color: $background-color;
+  position: relative;
+
+  svg {
+    position: absolute;
+    opacity: 0.4;
+    fill-opacity: 0.4;
+    left: 0px;
+    top: 0px;
+  }
+
+  .title, .value {
+    position: relative;
+    z-index: 99;
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $label-color;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .list-nostyle {
+    list-style: none;
+  }
+
+  .label {
+    color: $label-color;
+  }
+
+  .value {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $value-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .y_ticks {
+    font-size: 20px;
+    fill: $tick-color;
+    fill-opacity: 1;
+  }
+}
